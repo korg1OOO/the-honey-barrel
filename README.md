@@ -37,7 +37,6 @@ The source code is already organized:
 - `MATCHING_ALGORITHM.md`: Documents the matching algorithm.
 
 #### **C. Documentation**
-- **`MATCHING_ALGORITHM.md`**
 - **API Integration Documentation**
     The extension integrates with the BAXUS marketplace API to fetch listings for price comparison.
     Endpoint: GET https://services.baxus.co/api/search/listings?from=0&size=20&listed=true
