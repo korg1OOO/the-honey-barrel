@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+  }
+  
+  #container {
+    text-align: center;
+  }
+  
+  h2 {
+    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    color: #34495e;
+    margin: 10px 0;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  .savings {
+    font-weight: bold;
+  }
+  
+  .savings.positive {
+    color: #27ae60;
+  }
+  
+  .savings.negative {
+    color: #c0392b;
+  }
+  
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  #loading {
+    font-size: 14px;
+    color: #7f8c8d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+  }
+  
+  .spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 8px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+  }
+  
+  input[type="number"] {
+    width: 60px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    font-size: 12px;
+    color: #7f8c8d;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }

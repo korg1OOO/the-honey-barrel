@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Honey Barrel - Privacy Policy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 24px;
+    }
+    h2 {
+      color: #34495e;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Honey Barrel - Privacy Policy</h1>
+  <p>Welcome to The Honey Barrel, a Chrome extension designed to help whisky and wine enthusiasts find better deals by comparing prices on retail websites with the BAXUS marketplace. This Privacy Policy explains how we handle data, ensuring transparency and prioritizing your privacy.</p>
+  
+  <h2>1. Data We Access</h2>
+  <p>The Honey Barrel extension operates by scraping publicly available bottle information (e.g., name, price, size, ABV) from supported retail websites when you visit a product page. This data is processed locally in your browser to compare with listings on the BAXUS marketplace.</p>
+  <p>We do not access, collect, or process any personal data such as your name, email, browsing history, or any other personally identifiable information.</p>
+
+  <h2>2. Third-Party Services</h2>
+  <p>The extension makes the following network requests:</p>
+  <ul>
+    <li><strong>BAXUS API</strong>: We query the BAXUS marketplace API (<a href="https://services.baxus.co/api/search/listings">https://services.baxus.co/api/search/listings</a>) to retrieve listings for price comparison. Only bottle-related data is accessed, and no personal data is shared with BAXUS.</li>
+    <li><strong>ExchangeRate-API</strong>: We fetch exchange rates from ExchangeRate-API (<a href="https://api.exchangerate-api.com">https://api.exchangerate-api.com</a>) to convert prices to USD for accurate comparisons. No personal data is sent in these requests.</li>
+  </ul>
+  <p>We recommend reviewing the privacy policies of these third-party services for more information on their data practices.</p>
+
+  <h2>3. Data Storage</h2>
+  <p>The extension uses Chrome’s <code>storage.local</code> API to cache BAXUS marketplace listings for performance optimization. This cache is stored locally on your device and contains only bottle-related data (e.g., names, prices, sizes). The cache expires after 24 hours and is automatically refreshed.</p>
+  <p>No personal data is stored, and the cached data is not transmitted to any external servers.</p>
+
+  <h2>4. Data Sharing</h2>
+  <p>We do not share any data with third parties, except for the API requests mentioned above, which do not include personal information. All processing occurs within your browser.</p>
+
+  <h2>5. Permissions</h2>
+  <p>The extension requests the following permissions:</p>
+  <ul>
+    <li><strong>activeTab</strong>: To access the current webpage and scrape bottle information.</li>
+    <li><strong>storage</strong>: To cache BAXUS listings locally for faster performance.</li>
+    <li><strong>scripting</strong>: To inject scripts into supported retail websites for scraping.</li>
+    <li><strong>host_permissions</strong>: To access specific retail websites and the BAXUS/ExchangeRate APIs.</li>
+  </ul>
+  <p>These permissions are the minimum required to provide the extension’s functionality and are used solely for the purposes described in this policy.</p>
+
+  <h2>6. User Rights</h2>
+  <p>Since The Honey Barrel does not collect personal data, there is no user data to manage. You can uninstall the extension at any time via Chrome’s extension settings, which will remove all locally cached data.</p>
+
+  <h2>7. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in the extension’s functionality or legal requirements. Any updates will be reflected on this page with a revised "Last Updated" date.</p>
+
+  <p><strong>Last updated:</strong> April 24, 2025</p>
+</body>
+</html>

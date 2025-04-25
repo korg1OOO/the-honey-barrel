@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "The Honey Barrel",
+  "version": "1.0.0",
+  "description": "A Chrome extension to compare whisky/wine bottle prices with the BAXUS marketplace.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.thewhiskyexchange.com/*",
+    "*://*.masterofmalt.com/*",
+    "*://*.wangsliquors.com/*",
+    "*://*.patsliquordelray.com/*",
+    "*://*.totalwine.com/*",
+    "*://*.drizly.com/*",
+    "*://*.wine.com/*",
+    "*://services.baxus.co/*",
+    "*://api.exchangerate-api.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.thewhiskyexchange.com/*",
+        "*://*.masterofmalt.com/*",
+        "*://*.wangsliquors.com/*",
+        "*://*.patsliquordelray.com/*",
+        "*://*.totalwine.com/*",
+        "*://*.drizly.com/*",
+        "*://*.wine.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["privacy-policy.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
