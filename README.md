@@ -29,7 +29,6 @@ A Chrome extension that scrapes whisky and wine bottle information from retail w
 5. The extension will appear in your toolbar. Navigate to a supported retail website to use it.
 
 #### **B. Source Code**
-The source code is already organized:
 - `background.js`: Handles BAXUS API integration, matching, and price comparison.
 - `content.js`: Scrapes bottle information from retail websites.
 - `popup.js`/`popup.html`/`popup.css`: Manages the UI.
